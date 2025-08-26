@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import {ViewTransitions} from "next-view-transitions"
+import { ThemeProvider } from "@/components/providers/theme-providers";
 
 
 const geistSans = Geist({
@@ -26,12 +27,20 @@ export default function RootLayout({
 }>) {
   return (
      <ViewTransitions>
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning >
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        suppressHydrationWarning
       >
+         <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
        
         {children}
+        </ThemeProvider>
       </body>
     </html>
     </ViewTransitions>

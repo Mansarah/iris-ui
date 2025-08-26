@@ -5,6 +5,7 @@ import { Link as ViewTransitionsLink } from "next-view-transitions";
 
 import { ArrowUpRight } from "lucide-react";
 import { PartyPopper } from "lucide-react";
+import { ThemeToggle } from "../../lib/theme-toggle";
 
 export function Header() {
   return (
@@ -97,8 +98,8 @@ export function Header() {
                 <div className="hidden sm:flex items-center gap-3">
                   <span className="text-zinc-300 dark:text-zinc-700">|</span>
                   {/* <HeaderPro /> */}
-                  {/* <ThemeToggle /> */}
-                  toogle
+                  <ThemeToggle />
+                 
                 </div>
 
 
@@ -118,8 +119,8 @@ export function Header() {
                   >
                     Pricing
                   </ViewTransitionsLink>
-                  {/* <ThemeToggle /> */}
-                  togle mobile
+                  <ThemeToggle />
+              
                 </div>
               </div>
             </div>
