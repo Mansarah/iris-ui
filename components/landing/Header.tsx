@@ -119,8 +119,8 @@ export function Header() {
                   >
                     Pricing
                   </ViewTransitionsLink>
-                  {/* <ThemeToggle /> */}
-                  togle mobile
+                  <ThemeToggle />
+              
                 </div>
               </div>
             </div>
