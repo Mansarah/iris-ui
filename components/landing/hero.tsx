@@ -6,7 +6,7 @@ import TailwindCSS from "../icons/tailwindcss";
 import { Sparkles } from "lucide-react";
 import  { BrowseComponentsButton } from "../ui/browse-button";
 import { BrowseBlocksButton } from "../ui/browse-block";
-import Features from "./features";
+import Features from "./feature-block";
 
 export function HeroSection() {
   return (
