@@ -6,6 +6,7 @@ import TailwindCSS from "../icons/tailwindcss";
 import { Sparkles } from "lucide-react";
 import  { BrowseComponentsButton } from "../ui/browse-button";
 import { BrowseBlocksButton } from "../ui/browse-block";
+import Features from "./features";
 
 export function HeroSection() {
   return (
@@ -71,7 +72,7 @@ export function HeroSection() {
           </div>
         </motion.div>
 
-       {/* Feature  */}
+       <Features/>
       </div>
 
       {/* Right side  */}
