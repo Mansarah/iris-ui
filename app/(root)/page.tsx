@@ -1,3 +1,5 @@
+import Alert01 from "@/components/irisui/alert/alert-01";
+import Alert02 from "@/components/irisui/alert/alert-02";
 import { HeroSection } from "@/components/landing/hero";
 
 
@@ -9,6 +11,8 @@ export default function Home() {
       <div className="grid grid-rows-[auto_1fr_auto] min-h-screen px-6 lg:px-4 gap-4 sm:gap-12">
         <HeroSection/>
       </div>
+      <Alert01/>
+      <Alert02/>
     </main>
   );
 }
