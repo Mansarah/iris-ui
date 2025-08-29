@@ -7,6 +7,15 @@ import { Sparkles } from "lucide-react";
 import  { BrowseComponentsButton } from "../ui/browse-button";
 import { BrowseBlocksButton } from "../ui/browse-block";
 import Features from "./feature-block";
+import Card06 from "../irisui/card/card-06";
+import Card02 from "../irisui/card/card-02";
+import Card08 from "../irisui/card/card-08";
+import Profile01 from "../irisui/profile/profile-01";
+import Profile04 from "../irisui/profile/profile-04";
+import AIInput_03 from "../irisui/ai-input/ai-input-03";
+import { Btn14 } from "../irisui/button/btn-14";
+import Btn03 from "../irisui/button/btn-03";
+import Input09 from "../irisui/input/input-09";
 
 export function HeroSection() {
   return (
@@ -89,7 +98,7 @@ export function HeroSection() {
             <span className="text-sm text-zinc-500 dark:text-zinc-400 block text-center mb-2">
               {"<Card/>"}
             </span>
-           
+           <Card08/>
           </div>
 
           {/* Action Search Bar */}
@@ -97,7 +106,7 @@ export function HeroSection() {
             <span className="text-sm text-zinc-500 dark:text-zinc-400 block text-center mb-2">
               Components
             </span>
-    
+       <Card02 />
           </div>
         </motion.div>
 
@@ -113,7 +122,7 @@ export function HeroSection() {
           </span>
          
           <div className="w-full h-48 rounded-xl border border-zinc-200 dark:border-zinc-800 flex items-center justify-center">
-         
+           <AIInput_03 />
           </div>
         </motion.div>
 
@@ -131,10 +140,10 @@ export function HeroSection() {
             </span>
             <div className="w-full h-48 rounded-xl  border border-zinc-200 dark:border-zinc-800 flex flex-col items-center justify-center gap-3">
               <Link href="/docs/components/button">
-              
+                 <Btn14 label="Bring me" className=" w-42 py-5" />
               </Link>
               <Link href="/docs/components/button">
-             
+                <Btn03 className=" w-42 py-5" />
               </Link>
             </div>
           </div>
@@ -146,6 +155,7 @@ export function HeroSection() {
             </span>
             <Link href="/docs/components/input">
             {/* input  */}
+                <Input09 />
             </Link>
           </div>
         </motion.div>

@@ -11,10 +11,12 @@ import { PreviewClient } from '@/components/mdx/preview-client';
 import Preview from '@/components/mdx/preview';
 import type { Metadata } from 'next';
 
-export default async function Page(props: PageProps<'/docs/[[...slug]]'>) {
+export default async function Page(props: {
+   params: Promise<{ slug?: string[] }>;
+}) {
   const params = await props.params;
   const page = source.getPage(params.slug);
-  // console.log("page", page);
+   console.log("page", page);
   if (!page) notFound();
 
   const MDX = page.data.body;
@@ -41,7 +43,9 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata(
-  props: PageProps<'/docs/[[...slug]]'>,
+  props: {
+      params: Promise<{ slug?: string[] }>;
+  }
 ): Promise<Metadata> {
   const params = await props.params;
   const page = source.getPage(params.slug);

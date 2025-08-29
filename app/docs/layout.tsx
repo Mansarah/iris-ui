@@ -1,10 +1,27 @@
-import { source } from '@/lib/source';
-import { DocsLayout } from 'fumadocs-ui/layouts/docs';
-import { baseOptions } from '@/lib/layout.shared';
+import { source } from "@/lib/source";
+import { DocsLayout } from "fumadocs-ui/layouts/notebook";
+
+import type { Metadata } from "next";
+import { baseOptions } from "@/lib/layout.shared";
+
+export const metadata: Metadata = {
+  title: {
+    template:
+      "%s | irisui - Free UI Components to build beautiful websites",
+    default: "irisui - Free UI Components to build beautiful websites",
+  },
+};
 
 export default function Layout({ children }: LayoutProps<'/docs'>) {
   return (
-    <DocsLayout tree={source.pageTree} {...baseOptions()}>
+    <DocsLayout
+      tree={source.pageTree}
+      {...baseOptions()}
+      sidebar={{
+        defaultOpenLevel: 1,
+        
+      }}
+    >
       {children}
     </DocsLayout>
   );
