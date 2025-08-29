@@ -1,0 +1,25 @@
+{
+    "title": "Components",
+    "description": "The headless library",
+    "icon": "Dna",
+    "root": true,
+    "defaultOpen": true,
+    "pages": [
+        "---Get Started---",
+        "index",
+        "---Latest---",
+        "components/action-search-bar",
+       
+        "---Blocks---",
+      
+        "blocks/dashboard",
+      
+        "---Components---",
+    "components/action-search-bar",
+      
+        "---Hooks---",
+       
+        "hooks/use-auto-resize-textarea"
+       
+    ]
+}

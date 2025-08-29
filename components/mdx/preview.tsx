@@ -14,7 +14,7 @@ interface PreviewProps {
 }
 const prePath = process.env.VERCEL_PROJECT_PRODUCTION_URL
   ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-  : "https://ui.iris.com";
+  : "http://localhost:3001";
 
 const Preview = ({
   children,
