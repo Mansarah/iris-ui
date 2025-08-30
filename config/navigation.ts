@@ -111,7 +111,8 @@ export const navigationSections:NavSection[]=[
             {
                 id:1,
                 title:"Use Auto Resizer Textarea",
-                href:"/docs/hooks/useAutoResizeTextarea"
+                href:"/docs/hooks/useAutoResizeTextarea",
+                isNew: true,
             },
         ]
     },

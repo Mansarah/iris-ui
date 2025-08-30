@@ -1,8 +1,6 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 
 import type React from "react"
-
 
 import { useState, useEffect, useRef, type KeyboardEvent } from "react"
 import { AnimatePresence, motion } from "framer-motion"
