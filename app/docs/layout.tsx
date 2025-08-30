@@ -1,6 +1,5 @@
 import { source } from "@/lib/source";
 import { DocsLayout } from "fumadocs-ui/layouts/notebook";
-
 import type { Metadata } from "next";
 import { baseOptions } from "@/lib/layout.shared";
 
@@ -19,7 +18,6 @@ export default function Layout({ children }: LayoutProps<'/docs'>) {
       {...baseOptions()}
       sidebar={{
         defaultOpenLevel: 1,
-        
       }}
     >
       {children}
