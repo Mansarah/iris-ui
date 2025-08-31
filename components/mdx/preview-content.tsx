@@ -1,21 +1,21 @@
-"use client"
+"use client";
+
 import {
     useActionState,
     useEffect,
     useState,
     useTransition,
     useRef,
-    type RefObject
-} from 'react'
+    type RefObject,
+} from "react";
+import { Button } from "@/components/ui/button";
+import { ArrowUpRight, Copy, Check, CheckCheck, Terminal } from "lucide-react";
+import { copyComponent } from "@/lib/action";
+import { cn } from "@/lib/utils";
+import { AnimatePresence, motion } from "motion/react";
+import { OpenInV0Button } from "../open-v0-button";
 
-import { Button } from '../ui/button'
-import { ArrowUpRight,Copy,CheckCheck,Terminal } from 'lucide-react'
-import { cn } from '@/lib/utils'
-import { AnimatePresence,motion } from 'motion/react'
-import { copyComponent } from '@/lib/action'
-import { OpenInV0Button } from '../open-v0-button'
-
-const PreviewContent = ({
+export default function PreviewContent({
     link,
     prePath,
     isBlock = false,
@@ -23,8 +23,8 @@ const PreviewContent = ({
     link: string;
     prePath: string;
     isBlock?: boolean;
-}) => {
-const [isPending, startTransition] = useTransition();
+}) {
+    const [isPending, startTransition] = useTransition();
     const [state, formAction] = useActionState(copyComponent, {
         error: "",
         content: "",
@@ -34,7 +34,8 @@ const [isPending, startTransition] = useTransition();
     const [isCopied, setIsCopied] = useState(false);
     const [isHovered, setIsHovered] = useState(false);
     const [isTerminalCopied, setIsTerminalCopied] = useState(false);
- const handleCopyClick = async () => {
+
+    const handleCopyClick = async () => {
         const [folder, filename] = link.split("/");
 
         startTransition(async () => {
@@ -50,9 +51,10 @@ const [isPending, startTransition] = useTransition();
         const [folder, filename] = link.split("/");
         return filename ? filename : folder;
     };
-     const handleTerminalClick = () => {
+
+    const handleTerminalClick = () => {
         const [folder, filename] = link.split("/");
-        const COPY = `npx shadcn@latest add ${prePath}/r/${
+        const COPY = `bunx shadcn@latest add ${prePath}/r/${
             filename ? filename : folder
         }.json`;
         navigator.clipboard.writeText(COPY);
@@ -126,8 +128,9 @@ const [isPending, startTransition] = useTransition();
 
     const terminalButtonRef = useRef<HTMLButtonElement>(null);
     const copyButtonRef = useRef<HTMLButtonElement>(null);
-  return (
-    <>
+
+    return (
+        <>
             {isTerminalCopied && (
                 <SuccessParticles
                     buttonRef={terminalButtonRef as RefObject<HTMLButtonElement>}
@@ -249,7 +252,5 @@ const [isPending, startTransition] = useTransition();
                 </div>
             </div>
         </>
-  )
+    );
 }
-
-export default PreviewContent
