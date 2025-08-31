@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { ArrowRight, Github, Zap } from "lucide-react";
-import AIInput_03 from "../irisui/ai-input/ai-input-03";
 
 function Header() {
     return (
@@ -35,7 +34,7 @@ export function BuildInterfacesCard({ className }: BuildInterfacesCardProps) {
                         components / AI-Input-03
                     </p>
                     <div className="select-none cursor-default touch-none pointer-events-none">
-                        <AIInput_03 />
+                        {/* <AIInput_03 /> */}
                     </div>
                 </div>
 

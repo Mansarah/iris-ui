@@ -10,9 +10,6 @@ import Features from "./feature-block";
 import Card06 from "../irisui/card/card-06";
 import Card02 from "../irisui/card/card-02";
 import Card08 from "../irisui/card/card-08";
-import Profile01 from "../irisui/profile/profile-01";
-import Profile04 from "../irisui/profile/profile-04";
-import AIInput_03 from "../irisui/ai-input/ai-input-03";
 import { Btn14 } from "../irisui/button/btn-14";
 import Btn03 from "../irisui/button/btn-03";
 import Input09 from "../irisui/input/input-09";
@@ -122,7 +119,7 @@ export function HeroSection() {
           </span>
          
           <div className="w-full h-48 rounded-xl border border-zinc-200 dark:border-zinc-800 flex items-center justify-center">
-           <AIInput_03 />
+           {/* <AIInput_03 /> */}
           </div>
         </motion.div>
 
