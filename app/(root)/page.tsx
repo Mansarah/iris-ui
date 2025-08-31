@@ -24,7 +24,7 @@ export default function Home() {
           
             <TechnologyBadges/> */}
             {/* <EventToast /> */}
-    
+     <TechnologyBadges/>
     </main>
   );
 }

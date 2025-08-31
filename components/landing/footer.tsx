@@ -9,11 +9,11 @@ import XIcon from "../icons/x-icon";
 export function Footer() {
   const socialLinks = [
     {
-      href: "#",
+      href: "https://github.com/Sajid-tech/iris-ui",
       icon: <LucideGithub className="w-5 h-5 text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors" />,
     },
     {
-      href: "#",
+      href: "https://github.com/Sajid-tech/iris-ui",
       icon: <XIcon className="w-5 h-5 text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors" />,
     },
   ];
