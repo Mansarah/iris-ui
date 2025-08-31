@@ -5,6 +5,7 @@ import XIcon from "../icons/x-icon";
 
 
 
+
 export function Footer() {
   const socialLinks = [
     {

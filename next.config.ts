@@ -48,6 +48,7 @@ async headers(){
   eslint: {
         ignoreDuringBuilds: true,
       },
+      
 };
 
 export default withMDX(nextConfig);

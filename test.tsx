@@ -1,58 +1,151 @@
-import { source } from '@/lib/source';
-import {
-  DocsBody,
-  DocsDescription,
-  DocsPage,
-  DocsTitle,
-} from 'fumadocs-ui/page';
-import { notFound } from 'next/navigation';
-import defaultMdxComponents from 'fumadocs-ui/mdx';
-import { PreviewClient } from '@/components/mdx/preview-client';
-import Preview from '@/components/mdx/preview';
-import type { Metadata } from 'next';
+// {
+//   "name": "react-ui",
+//   "version": "0.1.0",
+//   "private": true,
+//   "scripts": {
+//     "dev": "next dev",
+//     "build": "next build",
+//     "start": "next start",
+//     "lint": "next lint"
+//   },
+//   "dependencies": {
+//     "@hookform/resolvers": "^5.0.1",
+//     "@number-flow/react": "^0.5.9",
+//     "@radix-ui/react-accordion": "^1.2.7",
+//     "@radix-ui/react-alert-dialog": "^1.1.10",
+//     "@radix-ui/react-aspect-ratio": "^1.1.4",
+//     "@radix-ui/react-avatar": "^1.1.6",
+//     "@radix-ui/react-checkbox": "^1.2.2",
+//     "@radix-ui/react-collapsible": "^1.1.7",
+//     "@radix-ui/react-context-menu": "^2.2.11",
+//     "@radix-ui/react-dialog": "^1.1.10",
+//     "@radix-ui/react-dropdown-menu": "^2.1.11",
+//     "@radix-ui/react-hover-card": "^1.1.10",
+//     "@radix-ui/react-label": "^2.1.4",
+//     "@radix-ui/react-menubar": "^1.1.11",
+//     "@radix-ui/react-navigation-menu": "^1.2.9",
+//     "@radix-ui/react-popover": "^1.1.10",
+//     "@radix-ui/react-progress": "^1.1.4",
+//     "@radix-ui/react-radio-group": "^1.3.3",
+//     "@radix-ui/react-scroll-area": "^1.2.5",
+//     "@radix-ui/react-select": "^2.2.2",
+//     "@radix-ui/react-separator": "^1.1.4",
+//     "@radix-ui/react-slider": "^1.3.2",
+//     "@radix-ui/react-slot": "^1.2.0",
+//     "@radix-ui/react-switch": "^1.2.2",
+//     "@radix-ui/react-tabs": "^1.1.8",
+//     "@radix-ui/react-toggle": "^1.1.6",
+//     "@radix-ui/react-toggle-group": "^1.1.7",
+//     "@radix-ui/react-tooltip": "^1.2.3",
+//     "@types/mdx": "^2.0.13",
+//     "class-variance-authority": "^0.7.1",
+//     "clsx": "^2.1.1",
+//     "cmdk": "^1.1.1",
+//     "date-fns": "^3.6.0",
+//     "embla-carousel-react": "^8.6.0",
+//     "framer-motion": "^12.7.4",
+//     "fumadocs-core": "^15.2.9",
+//     "fumadocs-mdx": "^11.6.1",
+//     "fumadocs-ui": "^15.2.9",
+//     "input-otp": "^1.4.2",
+//     "lucide-react": "^0.503.0",
+//     "motion": "^12.7.4",
+//     "next": "15.3.1",
+//     "next-themes": "^0.4.6",
+//     "next-view-transitions": "^0.3.4",
+//     "react": "^19.0.0",
+//     "react-day-picker": "^8.10.1",
+//     "react-dom": "^19.0.0",
+//     "react-hook-form": "^7.56.0",
+//     "react-resizable-panels": "^2.1.8",
+//     "recharts": "^2.15.3",
+//     "resend": "^4.4.0",
+//     "sonner": "^2.0.3",
+//     "tailwind-merge": "^3.2.0",
+//     "tw-animate-css": "^1.2.8",
+//     "vaul": "^1.1.2",
+//     "zod": "^3.24.3"
+//   },
+//   "devDependencies": {
+//     "@eslint/eslintrc": "^3",
+//     "@tailwindcss/postcss": "^4",
+//     "@types/node": "^20",
+//     "@types/react": "^19",
+//     "@types/react-dom": "^19",
+//     "eslint": "^9",
+//     "eslint-config-next": "15.3.1",
+//     "tailwindcss": "^4",
+//     "typescript": "^5"
+//   }
+// }
 
-export default async function Page(props: {
-   params: Promise<{ slug?: string[] }>;
-}) {
-  const params = await props.params;
-  const page = source.getPage(params.slug);
-   console.log("page", page);
-  if (!page) notFound();
+// import type { NextConfig } from "next";
+// import { createMDX } from 'fumadocs-mdx/next';
 
-  const MDX = page.data.body;
+// const withMDX = createMDX();
 
-  return (
-    <DocsPage toc={page.data.toc} full={page.data.full}>
-      <DocsTitle>{page.data.title}</DocsTitle>
-      <DocsDescription>{page.data.description}</DocsDescription>
-      <DocsBody>
-       <MDX
-                    components={{
-                        ...defaultMdxComponents,
-                        Preview,
-                        PreviewClient,
-                    }}
-                />
-      </DocsBody>
-    </DocsPage>
-  );
-}
+// const nextConfig:NextConfig = {
+  
+// pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
+// outputFileTracingIncludes:{
+//   "/**":["components/irisui/**/*"]
+// },
+// async headers(){
+//   return [
+//     {
+//       source:"/r/:path*",
+//       headers:[
+//         {
+//           key:"Cache-Control",
+//           value:"public , max-age-31536000 , immutable"
+//         }
+//       ]
+//     }
+//   ]
+// },
+//   images: {
+//      unoptimized: true,
+//     remotePatterns: [
+//       {
+//         protocol: 'https',
+//         hostname: 'ferf1mheo22r9ira.public.blob.vercel-storage.com',
+//       },
+//       {
+//         protocol: 'https',
+//         hostname: 'images.unsplash.com',
+//       },
+//       {
+//         protocol: 'https',
+//         hostname: 'plus.unsplash.com',
+//       },
+//       {
+//         protocol:'https',
+//         hostname:"*"
+//       }
+      
+//     ],
+//   },
+//   reactStrictMode:true,
+//   eslint: {
+//         ignoreDuringBuilds: true,
+//       },
+//        webpack: (config) => {
+//     config.module.rules.push({
+//       test: /\.mjs$/,
+//       include: /node_modules/,
+//       type: 'javascript/auto',
+//     });
+    
+//     return config;
+//   },
+//   experimental: {
+//     esmExternals: 'loose'
+//   },
+//   // Optionally transpile the motion package
+//   transpilePackages: ['motion'],
 
-export async function generateStaticParams() {
-  return source.generateParams();
-}
+// };
 
-export async function generateMetadata(
-  props: {
-      params: Promise<{ slug?: string[] }>;
-  }
-): Promise<Metadata> {
-  const params = await props.params;
-  const page = source.getPage(params.slug);
-  if (!page) notFound();
+// export default withMDX(nextConfig);
 
-  return {
-    title: page.data.title,
-    description: page.data.description,
-  };
-}
+

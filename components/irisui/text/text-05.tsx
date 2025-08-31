@@ -16,40 +16,40 @@ export default function Text_05({
     delay = 0.1,
     bouncingIndices = [0, 2, 5],
 }: BouncingTextProps) {
-    const letterAnimation = {
-        initial: { y: 0 },
-        animate: {
-            y: [-8, 0],
-            scaleY: [0.9, 1],
-            scaleX: [1.1, 1],
-            transition: {
-                y: {
-                    type: "spring",
-                    damping: 10,
-                    stiffness: 100,
-                    repeat: Number.POSITIVE_INFINITY,
-                    repeatType: "reverse",
-                    duration: 1.2,
-                },
-                scaleY: {
-                    type: "spring",
-                    damping: 10,
-                    stiffness: 100,
-                    repeat: Number.POSITIVE_INFINITY,
-                    repeatType: "reverse",
-                    duration: 1.2,
-                },
-                scaleX: {
-                    type: "spring",
-                    damping: 10,
-                    stiffness: 100,
-                    repeat: Number.POSITIVE_INFINITY,
-                    repeatType: "reverse",
-                    duration: 1.2,
-                },
+   const letterAnimation = {
+    initial: { y: 0 },
+    animate: {
+        y: [-8, 0],
+        scaleY: [0.9, 1],
+        scaleX: [1.1, 1],
+        transition: {
+            y: {
+                type: "spring" as const,
+                damping: 10,
+                stiffness: 100,
+                repeat: Number.POSITIVE_INFINITY,
+                repeatType: "reverse" as const,
+                duration: 1.2,
+            },
+            scaleY: {
+                type: "spring" as const,
+                damping: 10,
+                stiffness: 100,
+                repeat: Number.POSITIVE_INFINITY,
+                repeatType: "reverse" as const,
+                duration: 1.2,
+            },
+            scaleX: {
+                type: "spring" as const,
+                damping: 10,
+                stiffness: 100,
+                repeat: Number.POSITIVE_INFINITY,
+                repeatType: "reverse" as const,
+                duration: 1.2,
             },
         },
-    };
+    },
+};
 
     return (
         <div className="flex items-center justify-center gap-[2px]">
