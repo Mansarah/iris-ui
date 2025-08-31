@@ -78,7 +78,7 @@ function ElegantShape({
 }
 
 export default function HeroGeometric({
-    badge = "CodeSnippet UI",
+    badge = "irisui UI",
     title1 = "Elevate Your",
     title2 = "Digital Vision",
 }: {
@@ -86,18 +86,18 @@ export default function HeroGeometric({
     title1?: string;
     title2?: string;
 }) {
-    const fadeUpVariants = {
-        hidden: { opacity: 0, y: 30 },
-        visible: (i: number) => ({
-            opacity: 1,
-            y: 0,
-            transition: {
-                duration: 1,
-                delay: 0.5 + i * 0.2,
-                ease: [0.25, 0.4, 0.25, 1],
-            },
-        }),
-    };
+   const fadeUpVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: (i: number) => ({
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 1,
+            delay: 0.5 + i * 0.2,
+            ease: "easeOut" as const,
+        },
+    }),
+};
 
     return (
         <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-[#030303]">
@@ -161,7 +161,7 @@ export default function HeroGeometric({
                     >
                         <Image
                             src="https://ui.codesnipet.dev/logo.svg"
-                            alt="CodeSnippet UI"
+                            alt="irisui UI"
                             width={20}
                             height={20}
                         />

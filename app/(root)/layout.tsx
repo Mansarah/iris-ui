@@ -1,7 +1,7 @@
 
 
+import { Footer } from "@/components/landing/footer";
 import { Header } from "@/components/landing/header";
-import { Footer } from "@/components/layout/footer";
 import { Metadata } from "next";
 
 export const metadata:Metadata ={
@@ -21,7 +21,7 @@ export default function HomeLayout({children}:{children:React.ReactNode}){
     
     {children}
      </main>
-     <Footer/>
+    <Footer/>
 </>
 )
 }

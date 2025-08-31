@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "motion/react";
+import { motion, Variants } from "motion/react";
 import { cn } from "@/lib/utils";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -262,17 +262,16 @@ const avatars: Avatar[] = [
     },
 ];
 
-// Add these animation variants at the top level
-const mainAvatarVariants = {
-    initial: {
+const mainAvatarVariants: Variants = {
+    hidden: {
         y: 20,
         opacity: 0,
     },
-    animate: {
+    visible: {
         y: 0,
         opacity: 1,
         transition: {
-            type: "spring",
+            type: "spring" as const,
             stiffness: 200,
             damping: 20,
         },
@@ -286,44 +285,43 @@ const mainAvatarVariants = {
     },
 };
 
-const pickerVariants = {
-    container: {
-        initial: { opacity: 0 },
-        animate: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.1,
-                delayChildren: 0.2,
-            },
-        },
-    },
-    item: {
-        initial: {
-            y: 20,
-            opacity: 0,
-        },
-        animate: {
-            y: 0,
-            opacity: 1,
-            transition: {
-                type: "spring",
-                stiffness: 300,
-                damping: 20,
-            },
+const pickerVariants: Variants = {
+    hidden: { opacity: 0 },
+    visible: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.1,
+            delayChildren: 0.2,
         },
     },
 };
 
-const selectedVariants = {
-    initial: {
+const itemVariants: Variants = {
+    hidden: {
+        y: 20,
+        opacity: 0,
+    },
+    visible: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            type: "spring" as const,
+            stiffness: 300,
+            damping: 20,
+        },
+    },
+};
+
+const selectedVariants: Variants = {
+    hidden: {
         opacity: 0,
         rotate: -180,
     },
-    animate: {
+    visible: {
         opacity: 1,
         rotate: 0,
         transition: {
-            type: "spring",
+            type: "spring" as const,
             stiffness: 200,
             damping: 15,
         },
@@ -347,7 +345,7 @@ export default function AvatarPicker() {
     };
 
     return (
-        <motion.div initial="initial" animate="animate" className="w-full">
+        <motion.div initial="hidden" animate="visible" className="w-full">
             <Card className="w-full max-w-md mx-auto overflow-hidden bg-gradient-to-b from-background to-muted/30">
                 <CardContent className="p-0">
                     {/* Background header */}
@@ -391,7 +389,7 @@ export default function AvatarPicker() {
                         {/* Username display */}
                         <motion.div
                             className="text-center mt-4"
-                            variants={pickerVariants.item}
+                            variants={itemVariants}
                         >
                             <motion.h2
                                 className="text-2xl font-bold"
@@ -414,11 +412,11 @@ export default function AvatarPicker() {
                         {/* Avatar selection */}
                         <motion.div
                             className="mt-6"
-                            variants={pickerVariants.container}
+                            variants={pickerVariants}
                         >
                             <motion.div
                                 className="flex justify-center gap-4"
-                                variants={pickerVariants.container}
+                                variants={pickerVariants}
                             >
                                 {avatars.map((avatar) => (
                                     <motion.button
@@ -430,7 +428,7 @@ export default function AvatarPicker() {
                                             "relative w-12 h-12 rounded-full overflow-hidden border-2",
                                             "transition-all duration-300"
                                         )}
-                                        variants={pickerVariants.item}
+                                        variants={itemVariants}
                                         whileHover={{
                                             y: -2,
                                             transition: { duration: 0.2 },
@@ -451,8 +449,8 @@ export default function AvatarPicker() {
                                             <motion.div
                                                 className="absolute inset-0 bg-primary/20 ring-2 ring-primary ring-offset-2 ring-offset-background rounded-full"
                                                 variants={selectedVariants}
-                                                initial="initial"
-                                                animate="animate"
+                                                initial="hidden"
+                                                animate="visible"
                                                 exit="exit"
                                                 layoutId="selectedIndicator"
                                             />

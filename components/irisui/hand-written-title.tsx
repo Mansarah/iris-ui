@@ -10,17 +10,20 @@ export default function HandWrittenTitle({
     title = "Hand Written",
     subtitle = "Optional subtitle",
 }: HandWrittenTitleProps) {
-    const draw = {
-        hidden: { pathLength: 0, opacity: 0 },
-        visible: {
-            pathLength: 1,
-            opacity: 1,
-            transition: {
-                pathLength: { duration: 2.5, ease: [0.43, 0.13, 0.23, 0.96] },
-                opacity: { duration: 0.5 },
+   const draw = {
+    hidden: { pathLength: 0, opacity: 0 },
+    visible: {
+        pathLength: 1,
+        opacity: 1,
+        transition: {
+            pathLength: { 
+                duration: 2.5, 
+                ease: "easeInOut" as const 
             },
+            opacity: { duration: 0.5 },
         },
-    };
+    },
+};
 
     return (
         <div className="relative w-full max-w-4xl mx-auto py-24">
@@ -33,7 +36,7 @@ export default function HandWrittenTitle({
                     animate="visible"
                     className="w-full h-full"
                 >
-                    <title>codesnippetui</title>
+                    <title>irisui</title>
                     <motion.path
                         d="M 950 90 
                            C 1250 300, 1050 480, 600 520
