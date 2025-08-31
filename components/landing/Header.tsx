@@ -1,5 +1,5 @@
 
-import { Flame } from "lucide-react";
+import { CheckCheck, Eye, Flame } from "lucide-react";
 import Link from "next/link";
 import { Link as ViewTransitionsLink } from "next-view-transitions";
 
@@ -58,12 +58,28 @@ export function Header() {
                         `}
             >
               <div className="relative z-10 flex items-center justify-between w-full gap-2">
-                {/* Logo Section with Navigation Links */}
+             
                 <div className="flex items-center gap-6">
-                  <Link href="/" className="flex items-center gap-2">
-                   <Flame className="w-6 h-6 text-red-500 dark:text-red-400" />
+                  <Link href="/" className="flex items-center gap-0.5 ">
+                   {/* <Eye className="w-6 h-6 text-red-500 dark:text-red-400 rotate-90" /> */}
                    
-                    <span className="hidden sm:block font-semibold">
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 64 64" fill="none">
+
+  <rect x="12" y="12" width="16" height="16" rx="3" fill="url(#grad)"/>
+  <rect x="36" y="12" width="16" height="16" rx="3" fill="url(#grad)"/>
+  <rect x="12" y="36" width="16" height="16" rx="3" fill="url(#grad)"/>
+  <rect x="36" y="36" width="16" height="16" rx="3" fill="url(#grad)"/>
+  
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stopColor="#F43F5E"/> 
+      <stop offset="1" stopColor="#E11D48"/> 
+    </linearGradient>
+  </defs>
+</svg>
+
+                   
+                    <span className="hidden sm:block  font-semibold">
                       Iris UI
                     </span>
                   </Link>
@@ -71,7 +87,7 @@ export function Header() {
                   {/* Desktop Navigation Links */}
                   <div className="hidden sm:flex items-center gap-4">
                     <ViewTransitionsLink
-                      href="/docs/components/background-paths"
+                      href="/docs/components/avatar-picker"
                       className="text-sm text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors"
                     >
                       Components
