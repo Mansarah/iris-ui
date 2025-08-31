@@ -3,6 +3,7 @@ import { Flame } from "lucide-react";
 import Link from "next/link";
 import { Link as ViewTransitionsLink } from "next-view-transitions";
 
+
 import { ArrowUpRight } from "lucide-react";
 import { PartyPopper } from "lucide-react";
 import { ThemeToggle } from "../../lib/theme-toggle";
