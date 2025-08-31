@@ -7,12 +7,6 @@ import path from "path";
 const REGISTRY_BASE_PATH = process.cwd();
 const PUBLIC_FOLDER_BASE_PATH = "public/r";
 
-// const REGISTRY_TYPE_FOLDERS: Record<string, string> = {
-//     "registry:component": "components",
-//     "registry:hook": "hooks",
-//     "registry:lib": "lib",
-//     "registry:block": "blocks",
-// };
 
 /**
  * bun run ./scripts/build-registry.ts
@@ -25,7 +19,6 @@ async function writeFileRecursive(filePath: string, data: string) {
 
     try {
         await fs.mkdir(dir, { recursive: true });
-
         await fs.writeFile(filePath, data, "utf-8");
         // console.log(`File written to ${filePath}`);
     } catch (error) {
@@ -34,26 +27,40 @@ async function writeFileRecursive(filePath: string, data: string) {
     }
 }
 
-
 const getComponentFiles = async (files: File[], registryType: string) => {
     const filesArrayPromises = (files ?? []).map(async (file) => {
         if (typeof file === "string") {
-            const normalizedPath = file.startsWith("/") ? file : `/${file}`;
+            const normalizedPath = file.startsWith("/") ? file.substring(1) : file;
             const filePath = path.join(REGISTRY_BASE_PATH, normalizedPath);
             const fileContent = await fs.readFile(filePath, "utf-8");
             
             const fileName = normalizedPath.split('/').pop() || '';
             
+            const getTargetPath = (type: string) => {
+                switch (type) {
+                    case "registry:hook":
+                        return `hooks/${fileName}`;
+                    case "registry:lib":
+                        return `lib/${fileName}`;
+                    case "registry:block":
+                        return `blocks/${fileName}`;
+                    default:
+                        return `components/irisui/${fileName}`;
+                }
+            };
+            
             return {
                 type: registryType,
                 content: fileContent,
                 path: normalizedPath,
-                target: `/components/irisui/${fileName}`,
+                target: getTargetPath(registryType),
             };
         }
+        
         const normalizedPath = file.path.startsWith("/")
-            ? file.path
-            : `/${file.path}`;
+            ? file.path.substring(1)
+            : file.path;
+            
         const filePath = path.join(REGISTRY_BASE_PATH, normalizedPath);
         const fileContent = await fs.readFile(filePath, "utf-8");
         
@@ -62,23 +69,23 @@ const getComponentFiles = async (files: File[], registryType: string) => {
         const getTargetPath = (type: string) => {
             switch (type) {
                 case "registry:hook":
-                    return `/hooks/${fileName}`;
+                    return `hooks/${fileName}`;
                 case "registry:lib":
-                    return `/lib/${fileName}`;
+                    return `lib/${fileName}`;
                 case "registry:block":
-                    return `/blocks/${fileName}`;
+                    return `blocks/${fileName}`;
                 default:
-                    return `/components/irisui/${fileName}`;
+                    return `components/irisui/${fileName}`;
             }
         };
         
-        const fileType = typeof file === 'string' ? registryType : (file.type || registryType);
+        const fileType = file.type || registryType;
         
         return {
             type: fileType,
             content: fileContent,
             path: normalizedPath,
-            target: typeof file === 'string' ? getTargetPath(registryType) : (file.target || getTargetPath(fileType)),
+            target: file.target || getTargetPath(fileType),
         };
     });
 
@@ -104,14 +111,14 @@ const main = async () => {
         );
         const jsonPath = `${PUBLIC_FOLDER_BASE_PATH}/${component.name}.json`;
         await writeFileRecursive(jsonPath, json);
-        // console.log(json);
     }
 };
 
 main()
     .then(() => {
-        console.log("done");
+        console.log("Registry build completed successfully");
     })
     .catch((err) => {
-        console.error(err);
+        console.error("Registry build failed:", err);
+        process.exit(1);
     });
