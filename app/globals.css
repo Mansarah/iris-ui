@@ -127,12 +127,12 @@
 
 
 
-a[href="/docs/components/bento-grid"] {
+a[href="/docs/components/currency-transfer"] {
   position: relative;
   padding-right: 2.5rem;
 }
 
-a[href="/docs/components/bento-grid"]::after {
+a[href="/docs/components/currency-transfer"]::after {
   content: "New";
   position: absolute;
   right: 0.2rem;
@@ -149,16 +149,16 @@ a[href="/docs/components/bento-grid"]::after {
 }
 
 
-a[href="/docs/components/hero-geometric"],
+a[href="/docs/components/tweet-card"],
 a[href="/docs/components/matrix-text"],
-a[href="/docs/components/beams-background"] {
+a[href="/docs/components/checkout-interaction"] {
   position: relative;
   padding-right: 2.5rem;
 }
 
-a[href="/docs/components/hero-geometric"]::after,
+a[href="/docs/components/tweet-card"]::after,
 a[href="/docs/components/matrix-text"]::after,
-a[href="/docs/components/beams-background"]::after {
+a[href="/docs/components/checkout-interaction"]::after {
   content: "New";
   position: absolute;
   right: 0.2rem;
@@ -175,13 +175,13 @@ a[href="/docs/components/beams-background"]::after {
 }
 
 /* Blocks, update only if id is different than browse-blocks-button*/
-a[href="/docs/blocks/minimal-shop"]:not(#browse-blocks-button),
+
 a[href="/docs/blocks/ai-chat"]:not(#browse-blocks-button) {
   position: relative;
   padding-right: 2.5rem;
 }
 
-a[href="/docs/blocks/minimal-shop"]:not(#browse-blocks-button)::after,
+
 a[href="/docs/blocks/ai-chat"]:not(#browse-blocks-button)::after {
   content: "New";
   position: absolute;

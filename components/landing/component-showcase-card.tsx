@@ -2,7 +2,6 @@ import Input_10 from "@/components/irisui/input/input-10";
 import Input_08 from "@/components/irisui/input/input-08";
 import Btn12 from "@/components/irisui/button/btn-12";
 import Btn13 from "@/components/irisui/button/btn-13";
-import Alert02 from "../irisui/alert/alert-02";
 
 interface ComponentShowcaseCardProps {
     className: string;
@@ -21,7 +20,6 @@ export function ComponentShowcaseCard({
                 <div className="space-y-20 mt-8">
                     {[
                         { component: <Input_10 />, label: "Input 10" },
-                        { component: <Alert02 />, label: "Alert 04" },
                         {
                             component: (
                                 <div className="w-full flex justify-center gap-4">
