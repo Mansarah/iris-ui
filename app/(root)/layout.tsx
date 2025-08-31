@@ -1,7 +1,7 @@
 
 
 import { Footer } from "@/components/landing/footer";
-import { Header } from "@/components/landing/header";
+import { Header } from "@/components/landing/Header";
 import { Metadata } from "next";
 
 export const metadata:Metadata ={
