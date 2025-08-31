@@ -8,7 +8,7 @@ export const component: Registry = [
         registryDependencies: ["textarea"],
         files: [
             {
-                path: "components/irisui/ai-input/ai-input-01.tsx",
+                path: "/components/irisui/ai-input/ai-input-01.tsx",
                 type: "registry:component",
             },
             {
@@ -24,7 +24,7 @@ export const component: Registry = [
         registryDependencies: ["textarea"],
         files: [
             {
-                path: "components/irisui/ai-input/ai-input-02.tsx",
+                path: "/components/irisui/ai-input/ai-input-02.tsx",
                 type: "registry:component",
             },
             {
@@ -44,7 +44,7 @@ export const component: Registry = [
         registryDependencies: ["textarea"],
         files: [
             {
-                path: "components/irisui/ai-input/ai-input-03.tsx",
+                path: "/components/irisui/ai-input/ai-input-03.tsx",
                 type: "registry:component",
             },
             {
@@ -61,7 +61,7 @@ export const component: Registry = [
         registryDependencies: ["button"],
         files: [
             {
-                path: "components/irisui/button/btn-01.tsx",
+                path: "/components/irisui/button/btn-01.tsx",
                 type: "registry:component",
             },
         ],
@@ -72,7 +72,7 @@ export const component: Registry = [
         registryDependencies: ["button"],
         files: [
             {
-                path: "components/irisui/button/btn-02.tsx",
+                path: "/components/irisui/button/btn-02.tsx",
                 type: "registry:component",
             },
         ],
@@ -84,7 +84,7 @@ export const component: Registry = [
         registryDependencies: ["button"],
         files: [
             {
-                path: "components/irisui/button/btn-03.tsx",
+                path: "/components/irisui/button/btn-03.tsx",
                 type: "registry:component",
             },
         ],
@@ -96,7 +96,7 @@ export const component: Registry = [
         registryDependencies: ["button"],
         files: [
             {
-                path: "components/irisui/button/btn-04.tsx",
+                path: "/components/irisui/button/btn-04.tsx",
                 type: "registry:component",
             },
         ],
@@ -108,7 +108,7 @@ export const component: Registry = [
         registryDependencies: ["button"],
         files: [
             {
-                path: "components/irisui/button/btn-05.tsx",
+                path: "/components/irisui/button/btn-05.tsx",
                 type: "registry:component",
             },
         ],
@@ -120,7 +120,7 @@ export const component: Registry = [
         registryDependencies: ["button"],
         files: [
             {
-                path: "components/irisui/button/btn-06.tsx",
+                path: "/components/irisui/button/btn-06.tsx",
                 type: "registry:component",
             },
             {
@@ -136,7 +136,7 @@ export const component: Registry = [
         registryDependencies: ["button"],
         files: [
             {
-                path: "components/irisui/button/btn-07.tsx",
+                path: "/components/irisui/button/btn-07.tsx",
                 type: "registry:component",
             },
         ],
@@ -148,7 +148,7 @@ export const component: Registry = [
         registryDependencies: ["button"],
         files: [
             {
-                path: "components/irisui/button/btn-08.tsx",
+                path: "/components/irisui/button/btn-08.tsx",
                 type: "registry:component",
             },
         ],
@@ -160,7 +160,7 @@ export const component: Registry = [
         registryDependencies: ["button"],
         files: [
             {
-                path: "components/irisui/button/btn-09.tsx",
+                path: "/components/irisui/button/btn-09.tsx",
                 type: "registry:component",
             },
         ],
@@ -172,7 +172,7 @@ export const component: Registry = [
         registryDependencies: ["button"],
         files: [
             {
-                path: "components/irisui/button/btn-10.tsx",
+                path: "/components/irisui/button/btn-10.tsx",
                 type: "registry:component",
             },
         ],
@@ -184,7 +184,7 @@ export const component: Registry = [
         registryDependencies: ["button"],
         files: [
             {
-                path: "components/irisui/button/btn-11.tsx",
+                path: "/components/irisui/button/btn-11.tsx",
                 type: "registry:component",
             },
         ],
@@ -196,7 +196,7 @@ export const component: Registry = [
         registryDependencies: ["button"],
         files: [
             {
-                path: "components/irisui/button/btn-12.tsx",
+                path: "/components/irisui/button/btn-12.tsx",
                 type: "registry:component",
             },
         ],
@@ -208,7 +208,7 @@ export const component: Registry = [
         registryDependencies: ["button"],
         files: [
             {
-                path: "components/irisui/button/btn-13.tsx",
+                path: "/components/irisui/button/btn-13.tsx",
                 type: "registry:component",
             },
         ],
@@ -220,7 +220,7 @@ export const component: Registry = [
         registryDependencies: ["button"],
         files: [
             {
-                path: "components/irisui/button/btn-15.tsx",
+                path: "/components/irisui/button/btn-15.tsx",
                 type: "registry:component",
             },
         ],
@@ -231,7 +231,7 @@ export const component: Registry = [
         dependencies: [],
         files: [
             {
-                path: "components/irisui/text/text-01.tsx",
+                path: "/components/irisui/text/text-01.tsx",
                 type: "registry:component",
             },
         ],
@@ -242,7 +242,7 @@ export const component: Registry = [
         dependencies: ["motion"],
         files: [
             {
-                path: "components/irisui/text/text-02.tsx",
+                path: "/components/irisui/text/text-02.tsx",
                 type: "registry:component",
             },
         ],
@@ -253,7 +253,7 @@ export const component: Registry = [
         dependencies: ["motion"],
         files: [
             {
-                path: "components/irisui/text/text-03.tsx",
+                path: "/components/irisui/text/text-03.tsx",
                 type: "registry:component",
             },
         ],
@@ -264,7 +264,7 @@ export const component: Registry = [
         dependencies: ["motion"],
         files: [
             {
-                path: "components/irisui/text/text-04.tsx",
+                path: "/components/irisui/text/text-04.tsx",
                 type: "registry:component",
             },
         ],
@@ -275,7 +275,7 @@ export const component: Registry = [
         dependencies: ["motion"],
         files: [
             {
-                path: "components/irisui/text/text-05.tsx",
+                path: "/components/irisui/text/text-05.tsx",
                 type: "registry:component",
             },
         ],
@@ -286,7 +286,7 @@ export const component: Registry = [
         dependencies: [],
         files: [
             {
-                path: "components/irisui/text/text-06.tsx",
+                path: "/components/irisui/text/text-06.tsx",
                 type: "registry:component",
             },
         ],
@@ -298,7 +298,7 @@ export const component: Registry = [
         registryDependencies: [],
         files: [
             {
-                path: "components/irisui/card/card-01.tsx",
+                path: "/components/irisui/card/card-01.tsx",
                 type: "registry:component",
             },
         ],
@@ -310,7 +310,7 @@ export const component: Registry = [
         registryDependencies: ["button"],
         files: [
             {
-                path: "components/irisui/card/card-02.tsx",
+                path: "/components/irisui/card/card-02.tsx",
                 type: "registry:component",
             },
         ],
@@ -322,7 +322,7 @@ export const component: Registry = [
         registryDependencies: [],
         files: [
             {
-                path: "components/irisui/card/card-03.tsx",
+                path: "/components/irisui/card/card-03.tsx",
                 type: "registry:component",
             },
         ],
@@ -334,7 +334,7 @@ export const component: Registry = [
         registryDependencies: [],
         files: [
             {
-                path: "components/irisui/card/card-04.tsx",
+                path: "/components/irisui/card/card-04.tsx",
                 type: "registry:component",
             },
         ],
@@ -346,7 +346,7 @@ export const component: Registry = [
         registryDependencies: [],
         files: [
             {
-                path: "components/irisui/card/card-05.tsx",
+                path: "/components/irisui/card/card-05.tsx",
                 type: "registry:component",
             },
         ],
@@ -358,7 +358,7 @@ export const component: Registry = [
         registryDependencies: [],
         files: [
             {
-                path: "components/irisui/card/card-06.tsx",
+                path: "/components/irisui/card/card-06.tsx",
                 type: "registry:component",
             },
         ],
@@ -370,7 +370,7 @@ export const component: Registry = [
         registryDependencies: [],
         files: [
             {
-                path: "components/irisui/card/card-07.tsx",
+                path: "/components/irisui/card/card-07.tsx",
                 type: "registry:component",
             },
         ],
@@ -382,7 +382,7 @@ export const component: Registry = [
         registryDependencies: [],
         files: [
             {
-                path: "components/irisui/card/card-08.tsx",
+                path: "/components/irisui/card/card-08.tsx",
                 type: "registry:component",
             },
         ],
@@ -394,7 +394,7 @@ export const component: Registry = [
         registryDependencies: [],
         files: [
             {
-                path: "components/irisui/card/card-09.tsx",
+                path: "/components/irisui/card/card-09.tsx",
                 type: "registry:component",
             },
         ],
@@ -406,7 +406,7 @@ export const component: Registry = [
         registryDependencies: ["button", "progress"],
         files: [
             {
-                path: "components/irisui/card/card-10.tsx",
+                path: "/components/irisui/card/card-10.tsx",
                 type: "registry:component",
             },
         ],
@@ -418,7 +418,7 @@ export const component: Registry = [
         registryDependencies: ["button", "badge"],
         files: [
             {
-                path: "components/irisui/pricing/pricing-01.tsx",
+                path: "/components/irisui/pricing/pricing-01.tsx",
                 type: "registry:component",
             },
         ],
@@ -430,7 +430,7 @@ export const component: Registry = [
         registryDependencies: ["button"],
         files: [
             {
-                path: "components/irisui/pricing/pricing-02.tsx",
+                path: "/components/irisui/pricing/pricing-02.tsx",
                 type: "registry:component",
             },
         ],
@@ -442,7 +442,7 @@ export const component: Registry = [
         registryDependencies: ["button"],
         files: [
             {
-                path: "components/irisui/pricing/pricing-03.tsx",
+                path: "/components/irisui/pricing/pricing-03.tsx",
                 type: "registry:component",
             },
         ],
@@ -454,7 +454,7 @@ export const component: Registry = [
         registryDependencies: ["button"],
         files: [
             {
-                path: "components/irisui/pricing/pricing-04.tsx",
+                path: "/components/irisui/pricing/pricing-04.tsx",
                 type: "registry:component",
             },
         ],
@@ -466,7 +466,7 @@ export const component: Registry = [
         registryDependencies: ["button"],
         files: [
             {
-                path: "components/irisui/pricing/pricing-05.tsx",
+                path: "/components/irisui/pricing/pricing-05.tsx",
                 type: "registry:component",
             },
         ],
@@ -478,7 +478,7 @@ export const component: Registry = [
         registryDependencies: ["button"],
         files: [
             {
-                path: "components/irisui/pricing/pricing-06.tsx",
+                path: "/components/irisui/pricing/pricing-06.tsx",
                 type: "registry:component",
             },
         ],
@@ -490,7 +490,7 @@ export const component: Registry = [
         registryDependencies: [],
         files: [
             {
-                path: "components/irisui/alert/alert-01.tsx",
+                path: "/components/irisui/alert/alert-01.tsx",
                 type: "registry:component",
             },
         ],
@@ -502,7 +502,7 @@ export const component: Registry = [
         registryDependencies: ["alert"],
         files: [
             {
-                path: "components/irisui/alert/alert-02.tsx",
+                path: "/components/irisui/alert/alert-02.tsx",
                 type: "registry:component",
             },
         ],
@@ -514,7 +514,7 @@ export const component: Registry = [
         dependencies: ["lucide-react"],
         files: [
             {
-                path: "components/irisui/input/input-01.tsx",
+                path: "/components/irisui/input/input-01.tsx",
                 type: "registry:component",
             },
         ],
@@ -525,7 +525,7 @@ export const component: Registry = [
         dependencies: ["lucide-react"],
         files: [
             {
-                path: "components/irisui/input/input-02.tsx",
+                path: "/components/irisui/input/input-02.tsx",
                 type: "registry:component",
             },
             {
@@ -544,7 +544,7 @@ export const component: Registry = [
         dependencies: ["lucide-react"],
         files: [
             {
-                path: "components/irisui/input/input-03.tsx",
+                path: "/components/irisui/input/input-03.tsx",
                 type: "registry:component",
             },
             {
@@ -559,7 +559,7 @@ export const component: Registry = [
         dependencies: ["lucide-react"],
         files: [
             {
-                path: "components/irisui/input/input-04.tsx",
+                path: "/components/irisui/input/input-04.tsx",
                 type: "registry:component",
             },
         ],
@@ -570,7 +570,7 @@ export const component: Registry = [
         dependencies: ["lucide-react"],
         files: [
             {
-                path: "components/irisui/input/input-05.tsx",
+                path: "/components/irisui/input/input-05.tsx",
                 type: "registry:component",
             },
         ],
@@ -581,7 +581,7 @@ export const component: Registry = [
         dependencies: ["lucide-react"],
         files: [
             {
-                path: "components/irisui/input/input-06.tsx",
+                path: "/components/irisui/input/input-06.tsx",
                 type: "registry:component",
             },
         ],
@@ -592,7 +592,7 @@ export const component: Registry = [
         dependencies: ["lucide-react"],
         files: [
             {
-                path: "components/irisui/input/input-08.tsx",
+                path: "/components/irisui/input/input-08.tsx",
                 type: "registry:component",
             },
             {
@@ -608,7 +608,7 @@ export const component: Registry = [
         registryDependencies: ["popover"],
         files: [
             {
-                path: "components/irisui/input/input-09.tsx",
+                path: "/components/irisui/input/input-09.tsx",
                 type: "registry:component",
             },
         ],
@@ -619,7 +619,7 @@ export const component: Registry = [
         dependencies: ["lucide-react"],
         files: [
             {
-                path: "components/irisui/input/input-10.tsx",
+                path: "/components/irisui/input/input-10.tsx",
                 type: "registry:component",
             },
         ],
@@ -631,7 +631,7 @@ export const component: Registry = [
         dependencies: [],
         files: [
             {
-                path: "components/irisui/faq/faq-01.tsx",
+                path: "/components/irisui/faq/faq-01.tsx",
                 type: "registry:component",
             },
         ],
@@ -643,7 +643,7 @@ export const component: Registry = [
         dependencies: ["motion", "lucide-react"],
         files: [
             {
-                path: "components/irisui/faq/faq-02.tsx",
+                path: "/components/irisui/faq/faq-02.tsx",
                 type: "registry:component",
             },
         ],
@@ -655,7 +655,7 @@ export const component: Registry = [
         dependencies: ["lucide-react"],
         files: [
             {
-                path: "components/irisui/faq/faq-03.tsx",
+                path: "/components/irisui/faq/faq-03.tsx",
                 type: "registry:component",
             },
         ],
@@ -667,7 +667,7 @@ export const component: Registry = [
         dependencies: ["lucide-react"],
         files: [
             {
-                path: "components/irisui/faq/faq-04.tsx",
+                path: "/components/irisui/faq/faq-04.tsx",
                 type: "registry:component",
             },
         ],
@@ -679,7 +679,7 @@ export const component: Registry = [
         dependencies: ["lucide-react"],
         files: [
             {
-                path: "components/irisui/list/list-01.tsx",
+                path: "/components/irisui/list/list-01.tsx",
                 type: "registry:component",
             },
         ],
@@ -691,7 +691,7 @@ export const component: Registry = [
         dependencies: ["lucide-react"],
         files: [
             {
-                path: "components/irisui/list/list-02.tsx",
+                path: "/components/irisui/list/list-02.tsx",
                 type: "registry:component",
             },
         ],
@@ -703,7 +703,7 @@ export const component: Registry = [
         dependencies: ["lucide-react"],
         files: [
             {
-                path: "components/irisui/list/list-03.tsx",
+                path: "/components/irisui/list/list-03.tsx",
                 type: "registry:component",
             },
         ],
@@ -715,7 +715,7 @@ export const component: Registry = [
         dependencies: ["lucide-react"],
         files: [
             {
-                path: "components/irisui/list/list-04.tsx",
+                path: "/components/irisui/list/list-04.tsx",
                 type: "registry:component",
             },
         ],
@@ -727,7 +727,7 @@ export const component: Registry = [
         dependencies: ["lucide-react"],
         files: [
             {
-                path: "components/irisui/list/list-05.tsx",
+                path: "/components/irisui/list/list-05.tsx",
                 type: "registry:component",
             },
         ],
@@ -739,7 +739,7 @@ export const component: Registry = [
         dependencies: ["lucide-react"],
         files: [
             {
-                path: "components/irisui/list/list-06.tsx",
+                path: "/components/irisui/list/list-06.tsx",
                 type: "registry:component",
             },
         ],
@@ -750,7 +750,7 @@ export const component: Registry = [
         dependencies: ["lucide-react"],
         files: [
             {
-                path: "components/irisui/profile/profile-01.tsx",
+                path: "/components/irisui/profile/profile-01.tsx",
                 type: "registry:component",
             },
         ],
@@ -762,7 +762,7 @@ export const component: Registry = [
         registryDependencies: ["button"],
         files: [
             {
-                path: "components/irisui/profile/profile-02.tsx",
+                path: "/components/irisui/profile/profile-02.tsx",
                 type: "registry:component",
             },
         ],
@@ -780,7 +780,7 @@ export const component: Registry = [
         ],
         files: [
             {
-                path: "components/irisui/profile/profile-03.tsx",
+                path: "/components/irisui/profile/profile-03.tsx",
                 type: "registry:component",
             },
         ],
@@ -792,7 +792,7 @@ export const component: Registry = [
         registryDependencies: ["button", "badge", "progress"],
         files: [
             {
-                path: "components/irisui/profile/profile-04.tsx",
+                path: "/components/irisui/profile/profile-04.tsx",
                 type: "registry:component",
             },
         ],
@@ -804,7 +804,7 @@ export const component: Registry = [
         registryDependencies: ["button", "badge"],
         files: [
             {
-                path: "components/irisui/profile/profile-05.tsx",
+                path: "/components/irisui/profile/profile-05.tsx",
                 type: "registry:component",
             },
         ],
@@ -816,7 +816,7 @@ export const component: Registry = [
         registryDependencies: ["button"],
         files: [
             {
-                path: "components/irisui/checkout-interaction.tsx",
+                path: "/components/irisui/checkout-interaction.tsx",
                 type: "registry:component",
             },
         ],
@@ -828,7 +828,7 @@ export const component: Registry = [
         registryDependencies: ["button"],
         files: [
             {
-                path: "components/irisui/particle-button.tsx",
+                path: "/components/irisui/particle-button.tsx",
                 type: "registry:component",
             },
         ],
@@ -840,7 +840,7 @@ export const component: Registry = [
         registryDependencies: ["card"],
         files: [
             {
-                path: "components/irisui/currency-transfer.tsx",
+                path: "/components/irisui/currency-transfer.tsx",
                 type: "registry:component",
             },
         ],
@@ -852,7 +852,7 @@ export const component: Registry = [
         registryDependencies: [],
         files: [
             {
-                path: "components/irisui/hand-written-title.tsx",
+                path: "/components/irisui/hand-written-title.tsx",
                 type: "registry:component",
             },
         ],
@@ -864,7 +864,7 @@ export const component: Registry = [
         registryDependencies: [],
         files: [
             {
-                path: "components/irisui/tweet-card.tsx",
+                path: "/components/irisui/tweet-card.tsx",
                 type: "registry:component",
             },
         ],
@@ -876,7 +876,7 @@ export const component: Registry = [
         registryDependencies: [],
         files: [
             {
-                path: "components/irisui/hero-geometric.tsx",
+                path: "/components/irisui/hero-geometric.tsx",
                 type: "registry:component",
             },
         ],
@@ -888,7 +888,7 @@ export const component: Registry = [
         registryDependencies: ["input"],
         files: [
             {
-                path: "components/irisui/action-search-bar.tsx",
+                path: "/components/irisui/action-search-bar.tsx",
                 type: "registry:component",
             },
             {
@@ -904,7 +904,7 @@ export const component: Registry = [
         registryDependencies: [],
         files: [
             {
-                path: "components/irisui/bento-grid.tsx",
+                path: "/components/irisui/bento-grid.tsx",
                 type: "registry:component",
             },
         ],
@@ -916,7 +916,7 @@ export const component: Registry = [
         registryDependencies: [],
         files: [
             {
-                path: "components/irisui/particles-background.tsx",
+                path: "/components/irisui/particles-background.tsx",
                 type: "registry:component",
             },
         ],
@@ -928,7 +928,7 @@ export const component: Registry = [
         registryDependencies: [],
         files: [
             {
-                path: "components/irisui/background-circles.tsx",
+                path: "/components/irisui/background-circles.tsx",
                 type: "registry:component",
             },
         ],
@@ -940,7 +940,7 @@ export const component: Registry = [
         registryDependencies: [],
         files: [
             {
-                path: "components/irisui/background-paths.tsx",
+                path: "/components/irisui/background-paths.tsx",
                 type: "registry:component",
             },
         ],
@@ -952,7 +952,7 @@ export const component: Registry = [
         registryDependencies: [],
         files: [
             {
-                path: "components/irisui/vercel-v0-chat.tsx",
+                path: "/components/irisui/vercel-v0-chat.tsx",
                 type: "registry:component",
             },
             {
@@ -968,7 +968,7 @@ export const component: Registry = [
         registryDependencies: [],
         files: [
             {
-                path: "components/irisui/toolbar.tsx",
+                path: "/components/irisui/toolbar.tsx",
                 type: "registry:component",
             },
         ],
@@ -980,7 +980,7 @@ export const component: Registry = [
         registryDependencies: [],
         files: [
             {
-                path: "components/irisui/beams-background.tsx",
+                path: "/components/irisui/beams-background.tsx",
                 type: "registry:component",
             },
         ],
@@ -992,7 +992,7 @@ export const component: Registry = [
         registryDependencies: [],
         files: [
             {
-                path: "components/irisui/matrix-text.tsx",
+                path: "/components/irisui/matrix-text.tsx",
                 type: "registry:component",
             },
         ],
@@ -1004,7 +1004,7 @@ export const component: Registry = [
         registryDependencies: [],
         files: [
             {
-                path: "components/irisui/avatar-picker.tsx",
+                path: "/components/irisui/avatar-picker.tsx",
                 type: "registry:component",
             },
         ],
