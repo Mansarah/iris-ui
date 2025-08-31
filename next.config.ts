@@ -6,6 +6,22 @@ const withMDX = createMDX();
 const nextConfig:NextConfig = {
   
 pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
+outputFileTracingIncludes:{
+  "/**":["components/irisui/**/*"]
+},
+async headers(){
+  return [
+    {
+      source:"/r/:path*",
+      headers:[
+        {
+          key:"Cache-Control",
+          value:"public , max-age-31536000 , immutable"
+        }
+      ]
+    }
+  ]
+},
   images: {
      unoptimized: true,
     remotePatterns: [
@@ -21,6 +37,10 @@ pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
         protocol: 'https',
         hostname: 'plus.unsplash.com',
       },
+      {
+        protocol:'https',
+        hostname:"*"
+      }
       
     ],
   },
