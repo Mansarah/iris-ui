@@ -28,11 +28,11 @@ const Preview = ({
      console.log(prePath + link);
   return (
    <>
-      <div className={cn("w-full overflow-hidden", className)}>
+      <div className={cn("w-full overflow-hidden ", className)}>
         <PreviewContent link={link} prePath={prePath} isBlock={isBlock} />
 
         {useIframe ? (
-          <div className="w-full my-4 border rounded-2xl border-zinc-400 dark:border-zinc-700">
+          <div className="w-full my-4  border rounded-2xl border-zinc-400 dark:border-zinc-700">
             <div className="relative w-full h-[100dvh] overflow-hidden">
               <iframe
                 title={link}
@@ -48,7 +48,7 @@ const Preview = ({
         ) : (
           <div
             className={cn(
-              "p-2 md:p-8 flex justify-center items-center relative border rounded-2xl my-4 border-zinc-400 dark:border-zinc-800 not-prose",
+              "p-2 md:p-8 flex justify-center items-center relative border rounded-md my-4 border-zinc-400 dark:border-zinc-800 not-prose",
               compact ? "min-h-[100px]" : "min-h-[400px]",
               isBlock ? "md:p-0" : ""
             )}

@@ -39,7 +39,7 @@ export function HeaderPro() {
   return (
     <div className="flex items-center justify-end gap-1 flex-1">
       <div className="flex items-center justify-start md:justify-end gap-1 flex-1">
-        <Link
+        {/* <Link
           href={content.link}
           target="_blank"
           className="flex items-center justify-end gap-2 pl-2 pr-0.5 py-1 text-sm font-medium text-zinc-800 dark:text-zinc-200 rounded-xl border-2 border-fuchsia-500/20 hover:border-fuchsia-500/60 transition-all duration-300 group hover:shadow-md"
@@ -74,9 +74,9 @@ export function HeaderPro() {
               <ArrowUpRight className="w-3.5 h-3.5 text-white/90 dark:text-zinc-900/90 group-hover:text-white dark:group-hover:text-zinc-900 transition-transform group-hover:translate-x-[1px] group-hover:-translate-y-[1px]" />
             </div>
           </div>
-        </Link>
+        </Link> */}
         <Link
-          href="https://github.com/Sajid-tech"
+          href="https://github.com/Sajid-tech/iris-ui"
           target="_blank"
           className="hidden group relative md:inline-flex items-center gap-2 px-1.5 py-1.5 text-sm rounded-lg bg-zinc-900 dark:bg-zinc-100 transition-colors hover:bg-zinc-800 dark:hover:bg-zinc-200"
         >
@@ -91,13 +91,13 @@ export function HeaderPro() {
             </svg>
           </div>
         </Link>
-        <Link
+        {/* <Link
           href="#"
           target="_blank"
           className="hidden group relative md:inline-flex items-center gap-2 px-1.5 py-1.5 text-sm rounded-lg bg-zinc-900 dark:bg-zinc-100 transition-colors hover:bg-zinc-800 dark:hover:bg-zinc-200"
         >
           <XIcon className="w-4 h-4 text-white dark:text-zinc-900" />
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

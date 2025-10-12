@@ -26,7 +26,7 @@ export function PreviewClient(props: PreviewClientProps) {
     };
 
     return (
-        <div className="relative">
+        <div className="relative ">
             <RefreshButton onRefresh={handleRefresh} />
             <div key={key}>
                 <Preview {...props} />
@@ -34,3 +34,4 @@ export function PreviewClient(props: PreviewClientProps) {
         </div>
     );
 }
+
