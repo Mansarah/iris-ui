@@ -170,7 +170,7 @@ export default function PreviewContent({
                     </a>
 
                     <div className="flex items-center gap-2">
-                        <OpenInV0Button name={openInV0()} />
+                        {/* <OpenInV0Button name={openInV0()} /> */}
                         <Button
                             ref={terminalButtonRef}
                             onClick={handleTerminalClick}
@@ -254,3 +254,4 @@ export default function PreviewContent({
         </>
     );
 }
+

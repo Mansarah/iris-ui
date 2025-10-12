@@ -14,7 +14,7 @@ export function Header() {
       {/* Mobile Pro Banner completely separate from sticky header */}
       <div className="sm:hidden w-full p-2.5 bg-white dark:bg-black/5">
         <Link
-          href="#"
+          href="/docs/components/avatar-picker"
           target="_blank"
           className="flex items-center justify-center gap-2"
         >
@@ -29,7 +29,7 @@ export function Header() {
             <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-orange-500 via-amber-500 to-orange-600 opacity-40 group-hover:opacity-80 blur-sm transition-opacity duration-500" />
             <div className="relative z-10 flex items-center gap-2">
               <span className="text-white dark:text-zinc-900">
-                Iris UI Pro
+                Iris UI 
               </span>
               <ArrowUpRight className="w-3.5 h-3.5 text-white/90 dark:text-zinc-900/90" />
             </div>
@@ -130,12 +130,12 @@ export function Header() {
                   >
                     Components
                   </ViewTransitionsLink>
-                  <ViewTransitionsLink
+                  {/* <ViewTransitionsLink
                     href="/pricing"
                     className="text-sm text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors"
                   >
                     Pricing
-                  </ViewTransitionsLink>
+                  </ViewTransitionsLink> */}
                   <ThemeToggle />
               
                 </div>
