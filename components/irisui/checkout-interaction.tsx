@@ -78,20 +78,23 @@ export default function CheckoutInteraction({
             currentCart.filter((item) => item.id !== productId)
         );
     };
-
-    const updateQuantity = (productId: string, delta: number) => {
-        setCart((currentCart) =>
-            currentCart.map((item) => {
+const updateQuantity = (productId: string, delta: number) => {
+    setCart((currentCart) =>
+        currentCart
+            .map((item) => {
                 if (item.id === productId) {
                     const newQuantity = item.quantity + delta;
-                    return newQuantity > 0
-                        ? { ...item, quantity: newQuantity }
-                        : item;
+                   
+                    if (newQuantity <= 0) return null;
+                    return { ...item, quantity: newQuantity };
                 }
                 return item;
             })
-        );
-    };
+            .filter(Boolean) as CartItem[] 
+    );
+};
+
+    
 
     const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
     const totalPrice = cart.reduce(
